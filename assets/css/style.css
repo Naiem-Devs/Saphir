@@ -33,8 +33,9 @@ button:focus {
 
 a:focus,
 a:hover {
-  color: inherit;
-  text-decoration: none; }
+  /* color: inherit; */
+  text-decoration: none;
+  }
 
 a,
 button {
@@ -138,6 +139,16 @@ li {
   z-index: 99;
 }
 
+.header_right {
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+}
+
+.bar {
+    flex-shrink: 0;
+}
+
 .header_right a {
     width: 150px;
     justify-content: center;
@@ -171,15 +182,15 @@ li {
 .bar a span {
   width: 100%;
   height: 3px;
-  background: #fff;
+  background: var(--thmColor);
   display: block;
   position: relative;
   top: 17px;
   border-radius: 30px;
   transition: .3s;
 } 
-.bar a span:before {left: 0;content: "";position: absolute;width: 100%;height: 100%;background: #fff;bottom: 10px;border-radius: 30px;transition: .3s;} 
-.bar a span:after {left: 0;content: "";position: absolute;width: 100%;height: 100%;background: #fff;bottom: -10px;border-radius: 30px;transition: .3s;}
+.bar a span:before {left: 0;content: "";position: absolute;width: 100%;height: 100%;background: var(--thmColor);bottom: 10px;border-radius: 30px;transition: .3s;} 
+.bar a span:after {left: 0;content: "";position: absolute;width: 100%;height: 100%;background: var(--thmColor);bottom: -10px;border-radius: 30px;transition: .3s;}
  
 /* humbarger END */
  
@@ -229,7 +240,7 @@ li {
   line-height: 40px;
   border-radius: 50%;
   font-size: 32px;
-  color: rgb(255, 0, 43);
+  color: rgb(0 0 0);
 }
 
 /* Header section END */
@@ -484,6 +495,7 @@ img.pj-4 {
     border: none;
     font-size: 18px;
     font-weight: 700;
+    text-align: left;
 }
 
 .accordion-button:not(.collapsed)::after {

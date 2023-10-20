@@ -26,7 +26,7 @@
         items: 3
       },
       992: {
-        items: 5
+        items: 4
       },
       1200: {
         items: 6
